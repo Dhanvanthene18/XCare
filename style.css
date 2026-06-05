@@ -1,0 +1,323 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #343541;
+  color: white;
+  transition: 0.3s;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+
+.sidebar {
+  width: 250px;
+  background-color: #202123;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+#new-chat-btn,
+#theme-toggle-btn {
+
+  width: 100%;
+  padding: 10px;
+  background-color: #10a37f;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* ---------------- HEALTH TIP ---------------- */
+
+.health-tip-box {
+
+  background-color: #2d2f45;
+  padding: 14px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.health-tip-title {
+
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #10a37f;
+}
+
+/* ---------------- SEARCH BAR ---------------- */
+
+#search-chat {
+
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  background-color: #2d2f45;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#search-chat::placeholder {
+
+  color: #bdbdbd;
+}
+
+/* ---------------- RECENT CHATS ---------------- */
+
+.recent-title {
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.recent-chat-item {
+
+  background-color: #2d2f45;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.recent-chat-item:hover {
+
+  background-color: #40425c;
+}
+
+.sidebar-bottom {
+
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* ---------------- CHAT AREA ---------------- */
+
+.chat-container {
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  font-size: 20px;
+}
+
+.chat-box {
+
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.bot-msg,
+.user-msg {
+
+  max-width: 70%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.bot-msg {
+
+  background-color: #444654;
+}
+
+.user-msg {
+
+  background-color: #10a37f;
+  margin-left: auto;
+}
+
+/* ---------------- INPUT AREA ---------------- */
+
+.input-area {
+
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #444;
+}
+
+#user-input {
+
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+}
+
+#send-btn {
+
+  margin-left: 10px;
+  padding: 10px 18px;
+  background-color: #10a37f;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------------- VOICE BUTTON ---------------- */
+
+#voice-btn {
+
+  margin-left: 10px;
+  padding: 10px 14px;
+  background-color: #444654;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+#voice-btn:hover {
+
+  background-color: #5a5c6f;
+}
+
+/* ACTIVE RECORDING */
+
+.voice-active {
+
+  background-color: red !important;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ---------------- LIGHT MODE ---------------- */
+
+.light-mode {
+
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.light-mode .sidebar {
+
+  background-color: #e4e4e4;
+}
+
+.light-mode .chat-header {
+
+  border-bottom: 1px solid #ccc;
+}
+
+.light-mode .bot-msg {
+
+  background-color: #d9d9d9;
+  color: black;
+}
+
+.light-mode .recent-chat-item {
+
+  background-color: #d5d5d5;
+  color: black;
+}
+
+.light-mode .recent-chat-item:hover {
+
+  background-color: #c4c4c4;
+}
+
+.light-mode #user-input {
+
+  background-color: white;
+  color: black;
+}
+
+.light-mode .health-tip-box {
+
+  background-color: #dcdcdc;
+  color: black;
+}
+
+.light-mode #search-chat {
+
+  background-color: white;
+  color: black;
+}
+
+/* ---------------- TYPING ANIMATION ---------------- */
+
+.typing {
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.typing-dot {
+
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  animation: blink 1.4s infinite;
+}
+
+.typing-dot:nth-child(2) {
+
+  animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+
+  0% {
+    opacity: 0.2;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}

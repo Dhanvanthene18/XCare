@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>XCare - AI Health Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div>
+
+      <!-- NEW CHAT -->
+      <button id="new-chat-btn">
+        + New Chat
+      </button>
+
+      <!-- THEME TOGGLE -->
+      <button id="theme-toggle-btn">
+        🌙 Dark Mode
+      </button>
+
+      <!-- HEALTH TIP -->
+      <div class="health-tip-box">
+
+        <div class="health-tip-title">
+          💡 Daily Health Tip
+        </div>
+
+        <div id="health-tip-text">
+          Drink enough water daily.
+        </div>
+
+      </div>
+
+      <!-- SEARCH BAR -->
+      <input
+        type="text"
+        id="search-chat"
+        placeholder="🔍 Search chats..."
+      />
+
+      <!-- RECENT CHATS -->
+      <div class="recent-title">
+        Recent Chats
+      </div>
+
+      <div id="recent-chats"></div>
+
+    </div>
+
+    <div class="sidebar-bottom">
+      XCare AI
+    </div>
+
+  </div>
+
+  <!-- CHAT AREA -->
+  <div class="chat-container">
+
+    <div class="chat-header">
+      XCare : AI Health Assistant
+    </div>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- INPUT AREA -->
+    <div class="input-area">
+
+      <input
+        id="user-input"
+        type="text"
+        placeholder="Type or speak your response..."
+      />
+
+      <!-- VOICE BUTTON -->
+      <button id="voice-btn">
+        🎤
+      </button>
+
+      <!-- SEND BUTTON -->
+      <button id="send-btn">
+        Send
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
