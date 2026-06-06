@@ -1,0 +1,44 @@
+{
+  "fever": {
+    "conditions": ["Viral Infection", "Typhoid", "Malaria"],
+    "category": "Infectious",
+    "base_risk": "low",
+    "red_flag": false,
+    "description": "Elevated body temperature indicating infection."
+  },
+  "cough": {
+    "conditions": ["Common Cold", "Bronchitis", "Pneumonia"],
+    "category": "Respiratory",
+    "base_risk": "low",
+    "red_flag": false,
+    "description": "Irritation or infection in respiratory tract."
+  },
+  "chest pain": {
+    "conditions": ["Heart Attack", "Angina", "Acid Reflux"],
+    "category": "Cardiovascular",
+    "base_risk": "high",
+    "red_flag": true,
+    "description": "Pain or discomfort in chest area."
+  },
+  "breathlessness": {
+    "conditions": ["Asthma", "COPD", "Pulmonary Embolism"],
+    "category": "Respiratory",
+    "base_risk": "high",
+    "red_flag": true,
+    "description": "Difficulty in breathing."
+  },
+  "headache": {
+    "conditions": ["Migraine", "Tension Headache", "Stress"],
+    "category": "Neurological",
+    "base_risk": "low",
+    "red_flag": false,
+    "description": "Pain in head region."
+  },
+  "vomiting": {
+    "conditions": ["Food Poisoning", "Gastritis", "Infection"],
+    "category": "Gastrointestinal",
+    "base_risk": "medium",
+    "red_flag": false,
+    "description": "Forceful emptying of stomach contents."
+  }
+}
