@@ -29,6 +29,21 @@ const clearBtn =
 
 const searchInput =
   document.getElementById("search-chat-input");
+const totalChecksText =
+  document.getElementById("total-checks");
+
+const highRiskText =
+  document.getElementById("high-risk-count");
+
+const mediumRiskText =
+  document.getElementById("medium-risk-count");
+
+const lowRiskText =
+  document.getElementById("low-risk-count");
+
+const avgScoreText =
+  document.getElementById("avg-score");
+
 
 let step = 0;
 
