@@ -22,6 +22,36 @@ body {
   padding: 15px;
   transition: 0.3s;
 }
+.sidebar-content {
+
+  flex: 1;
+
+  overflow-y: auto;
+
+  padding-right: 5px;
+}
+
+.sidebar-content::-webkit-scrollbar {
+
+  width: 8px;
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+
+  background: #202123;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+
+  background: #10a37f;
+
+  border-radius: 10px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb:hover {
+
+  background: #0d8c6d;
+}
 
 #new-chat-btn,
 #theme-toggle-btn {
@@ -47,6 +77,65 @@ body {
   margin-top: 10px;
   margin-bottom: 20px;
   line-height: 1.5;
+}
+/* HOSPITAL BOX */
+
+.hospital-box {
+
+  background-color: #2d2f45;
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+
+  line-height: 1.5;
+}
+
+.health-tip-title {
+
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #10a37f;
+}
+.hospital-link {
+
+  display: block;
+
+  color: white;
+
+  text-decoration: none;
+
+  margin-bottom: 6px;
+}
+
+.hospital-link:hover {
+
+  text-decoration: underline;
+}
+/* ---------------- ANALYTICS ---------------- */
+
+.analytics-box {
+
+  background-color: #2d2f45;
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+
+  line-height: 1.8;
+}
+
+.analytics-title {
+
+  font-weight: bold;
+
+  color: #10a37f;
+
+  margin-bottom: 10px;
 }
 
 .health-tip-title {
@@ -320,4 +409,56 @@ body {
   100% {
     opacity: 0.2;
   }
+}
+/* ---------------- DOWNLOAD REPORT ---------------- */
+
+#download-report-btn {
+
+  display: none;
+
+  margin: 10px auto;
+
+  padding: 12px 20px;
+
+  background-color: #10a37f;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+#download-report-btn:hover {
+
+  opacity: 0.9;
+}
+/* FAVORITE CHATS */
+
+.favorite-chat {
+
+  background-color: #f1c40f;
+
+  color: black;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  margin-bottom: 10px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.favorite-chat:hover {
+
+  opacity: 0.9;
 }
