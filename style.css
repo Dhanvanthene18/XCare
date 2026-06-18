@@ -93,12 +93,15 @@ body {
   line-height: 1.5;
 }
 
-.health-tip-title {
+.hospital-title {
+
+  color: #10a37f;
 
   font-weight: bold;
+
   margin-bottom: 8px;
-  color: #10a37f;
 }
+
 .hospital-link {
 
   display: block;
@@ -219,6 +222,27 @@ body {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
+}
+.chat-box::-webkit-scrollbar {
+
+  width: 10px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+
+  background: #343541;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+
+  background: #10a37f;
+
+  border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+
+  background: #0d8c6d;
 }
 
 .bot-msg,
@@ -361,7 +385,23 @@ body {
   background-color: #dcdcdc;
   color: black;
 }
+.light-mode .hospital-box {
 
+  background-color: #dcdcdc;
+
+  color: black;
+}
+
+.light-mode .hospital-link {
+
+  color: black;
+}
+.light-mode .analytics-box {
+
+  background-color: #dcdcdc;
+
+  color: black;
+}
 .light-mode #search-chat {
 
   background-color: white;
