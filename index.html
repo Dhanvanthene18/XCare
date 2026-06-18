@@ -14,7 +14,7 @@
   <!-- SIDEBAR -->
   <div class="sidebar">
 
-    <div>
+      <div class="sidebar-content">
 
       <!-- NEW CHAT -->
       <button id="new-chat-btn">
@@ -36,6 +36,17 @@
         <div id="health-tip-text">
           Drink enough water daily.
         </div>
+
+      </div>
+      <div class="hospital-box">
+
+      <div class="hospital-title">
+          🌍 Nearby Hospitals
+      </div>
+
+      <div id="hospital-list">
+           Allow location access...
+      </div>
 
       </div>
       <!-- HEALTH ANALYTICS -->
@@ -68,14 +79,17 @@
 
        </div>
 
-
       <!-- SEARCH BAR -->
       <input
         type="text"
         id="search-chat"
         placeholder="🔍 Search chats..."
       />
+      <div class="recent-title">
+         ⭐ Favorite Chats
+      </div>
 
+<div id="favorite-chats"></div>
       <!-- RECENT CHATS -->
       <div class="recent-title">
         Recent Chats
@@ -99,6 +113,9 @@
     </div>
 
     <div id="chat-box" class="chat-box"></div>
+    <button id="download-report-btn">
+         📄 Download Report
+    </button>
 
     <!-- INPUT AREA -->
     <div class="input-area">
